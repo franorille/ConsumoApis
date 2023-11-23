@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(200, 207, 207);
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-principal {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  max-width: 800px;
+  padding-bottom: 2rem;
+  border-radius: 3rem;
+  margin: 2rem;
+  box-shadow: 0rem 1rem 3rem -1rem black;
+  transition: all 0.75s;
+}
+.contenedor-principal:hover {
+  transform: translateY(-1rem);
+  transform: scale(1.1);
+  box-shadow: 2rem 2rem 2rem black;
+}
+
+p {
+  font-size: 1.2rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+p#suceso {
+  font-weight: bold;
+}
+
+p#año {
+  font-weight: 500;
+}
+form {
+  text-align: center;
+  width: fit-content;
+  background-color: white;
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form input {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: rgb(200, 207, 207);
+}
+form button {
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(99, 135, 253);
+}
+#contenedor {
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.animated-text {
+  text-align: center;
+  padding-top: 2.5rem;
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    90deg,
+    #ff3366,
+    #33ccff
+  ); /* Definir colores de la animación */
+  background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores basados en WebKit (como Chrome y Safari) */
+  color: transparent;
+  background-size: 200% 100%; /* Inicializar el tamaño del fondo */
+  animation: colorChange 5s infinite alternate ease-in; /* Animación de cambio de colores */
+}
+
+@keyframes colorChange {
+  0% {
+    background-position: 0% 0;
+  }
+  25% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 200% 0;
+  }
+  75% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 400% 0;
+  }
+}
