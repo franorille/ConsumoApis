@@ -25,14 +25,10 @@ function obtenFecha() {
   dia = fecha.value.substring(8);
   mes = fecha.value.substring(5, 7);
 
-  const url = `https://numbersapi.p.rapidapi.com/${mes}/${dia}/date?fragment=true&json=true`;
+  const url = `http://localhost:3000/obtener-datos/${mes}/${dia}`;
   const options = {
     method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "654d53b367msh60a39bf18368f6fp1df4afjsn198d7e9c22e0",
-      "X-RapidAPI-Host": "numbersapi.p.rapidapi.com",
-    },
-  };
+    };
 
   obtenDatos(url, options);
 }
